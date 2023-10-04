@@ -1,0 +1,95 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Courier New', Courier, monospace;
+}
+
+input,
+button {
+   padding: .5rem;
+   outline: none;
+   border: none;
+   border-radius: 6px;
+}
+
+.container {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 2rem;
+   min-height: 100vh;
+   padding: 1rem;
+   background: #EEE;
+}
+
+.container .todo-container {
+   width: 90vw;
+   max-width: 450px;
+   padding: 1rem;
+   border-radius: 12px;
+   background: #FFF;
+}
+
+.container .todo-container .todo-input {
+   display: flex;
+   justify-content: space-between;
+   gap: 1rem;
+   margin-bottom: 1.5rem;
+}
+
+.container .todo-container .todo-input input {
+   width: 100%;
+   border: 1px solid #7d7b7b;
+}
+
+.container .todo-container .todo-input button {
+   background: #196BDE;
+   color: #FFF;
+   font-weight: 600;
+   cursor: pointer;
+   transition: 0.3s ease-in-out;
+}
+
+.container .todo-container .todo-input button:hover {
+   background: #0e4490;
+}
+
+.container .todo-container .error {
+   display: none;
+   background: #cf2828;
+   color: #FFF;
+   text-align: center;
+   font-size: 11px;
+   margin-bottom: 1.5rem;
+   padding: .75rem;
+}
+
+.container .todo-container .todo-itens {
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;  
+   list-style: none;
+   margin-bottom: 10px;
+}
+
+.container .todo-container .todo-itens li {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: .75rem;
+   background: #EEE;
+}
+
+.container .todo-container .todo-itens li span {
+   cursor: pointer;
+   font-size: 24px;
+}
+
+.container .todo-container .todo-itens li span:hover {
+   color: red;
+}
